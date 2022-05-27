@@ -26,4 +26,4 @@ http
             data: 'Hello World!'
         }))
     })
-    .listen(4001, () => console.log("Servidor está rodando na porta 4001"))
+    .listen(process.env.PORT || 3000, () => console.log("Servidor está rodando na porta 4001"))
